@@ -1061,7 +1061,7 @@ class View(lookml):
         return sorted(self._fields(), key=lambda field: ''.join([str(isinstance(field, Measure)), field.name]))
     # end generators
         
-    def addDimension(self,d: Tuple[str,Dimension],type: str = 'string'): 
+    def addDimension(self,d,type: str = 'string'): 
         """
         Add a dimension object, or add a string DB column you would like added 
 
